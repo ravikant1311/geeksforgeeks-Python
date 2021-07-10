@@ -1,0 +1,54 @@
+def symmetry(a):
+    l=len(a)
+    flag=0
+    if l%2:  #Checking for odd and even numbers
+        mid=l//2
+    else:
+        mid=l//2 +1
+    start1= 0
+    start2= mid
+    while (start1 < mid and start2 < l):
+        if (a[start1]== a[start2]):
+            start1= start1+1
+            start2= start2+1
+
+        else:
+            flag=1
+
+        break
+
+    if flag == 0:
+        print("The entered string is symmetrical")
+    else:
+        print("The entered string is not symmetrical")
+
+def palindrome(abc):
+    l=len(abc)
+    flag=0
+    if l%2:
+        mid=l//2
+    else:
+        mid=l//2 + 1
+    start1=0
+    start2=l-1
+    while (start1< l-1 and start2>=0):
+        if abc[start1]==abc[start2]:
+            start1=start1+1
+            start2=start2-1
+        else:
+            flag=1
+
+        break
+    if flag==0:
+        print('This string is palindrome')
+    else:
+        print('This string is not a palindrome')
+
+example1= 'abcdabcd'
+
+symmetry(example1)
+palindrome(example1)
+
+example2= 'abcdeffedcba'
+symmetry(example2)
+palindrome(example2)
