@@ -1,0 +1,6 @@
+def reverse_sentense(sentense):
+    sent=sentense.split(' ')
+    print((' '.join(reversed(sent))))
+
+abc= 'If you are reading this hope you will get a 50 LPA job'
+reverse_sentense(abc)
