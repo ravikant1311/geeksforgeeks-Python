@@ -22,6 +22,7 @@ def symmetry(a):
     else:
         print("The entered string is not symmetrical")
 
+
 def palindrome(abc):
     l=len(abc)
     flag=0
@@ -52,3 +53,14 @@ palindrome(example1)
 example2= 'abcdeffedcba'
 symmetry(example2)
 palindrome(example2)
+
+
+#For Palindrome we can use reverse function as well.
+def Palindrome(abc):
+    reverse= abc[::-1]
+    if reverse==abc:
+        print('Your word is Palindrome')
+    else:
+        print('Your word is not Palindrome')
+
+Palindrome('abccba')
